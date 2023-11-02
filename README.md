@@ -2,6 +2,8 @@
 I am a Ph.D. student advised by [Prof. Hideo Saito](http://www.hvrl.ics.keio.ac.jp/) at Keio University, Japan.
 My research interests include computer vision and machine learning.
 
+Email: shiori.ueda[at]keio.jp
+
 # Publications
 ## 原著論文
 [1] 上田 栞, 藤井 亮, 斎藤 英雄, 星名 豊, "電線ケーブル3次元X線CT画像からの素線検出と追跡による3次元構造推定", 画像電子学会誌, Vol.52, No.1, pp.164-173, 2023年1月
