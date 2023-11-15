@@ -4,6 +4,8 @@ My research interests include computer vision and machine learning.
 
 Email: shiori.ueda[at]keio.jp
 
+[CV (in Japanese)](https://keio.box.com/s/4rn9r9xe942lncd2c0gnhb2ewv44xvz2) (updated in Nov. 2023)
+
 # Education
 - B.S. in Engineering, Keio University, Kanagawa, Japan  (Apr. 2018 - Mar. 2022)
 - M.S. in Engineering, Keio University, Kanagawa, Japan  (Apr. 2022 - Sep. 2023)
