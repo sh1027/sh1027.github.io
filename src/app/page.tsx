@@ -13,7 +13,7 @@ export default function Home() {
       <div className="max-w-screen-lg mx-auto flex flex-col py-10 space-y-10">
         {/* Profile */}
         <div className="flex flex-col md:items-start mx-10 space-y-5">
-          <div className="flex flex-col md:flex-row items-center space-x-5">
+          <div className="flex flex-col md:flex-row items-center md:space-x-5">
             <div className="flex-initial mb-5 md:mb-0">
               <Image
                 className="mx-auto rounded-full"
@@ -27,7 +27,7 @@ export default function Home() {
               <h1 className="text-xl text-neutral-900 mb-3">Shiori Ueda</h1>
               <h2 className="text-base text-neutral-600 font-light">Ph.D. student</h2>
               <h3 className="text-sm text-neutral-600 font-light">Keio University, Japan</h3>
-              <div className="flex gap-3 text-neutral-800 mt-3">
+              <div className="flex justify-between gap-3 text-neutral-800 mt-3">
                 <Link href="mailto:shiori.ueda@keio.jp">< SiGmail /></Link>
                 <Link href="https://github.com/sh1027">< SiGithub /></Link>
                 <Link href="https://www.linkedin.com/in/shiori-ueda-7a17b3243">< SiLinkedin /></Link>
