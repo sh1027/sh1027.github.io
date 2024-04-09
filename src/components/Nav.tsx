@@ -1,9 +1,9 @@
 'use client';
 
+import clsx from 'clsx';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from "react";
-import clsx from 'clsx';
 
 const mainlogo = { name: "Shiori Ueda", href: '/' }
 
@@ -12,7 +12,7 @@ const links = [
   { name: 'Photography (coming soon...)', href: '#' },
 ];
 
-export default function NavBar() {
+export default function Nav() {
   const pathname = usePathname();
   const [isOpen, setOpen] = useState<boolean>(false);
   const handleMenuOpen = () => {
