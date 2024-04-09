@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "title": "Teacher and Teaching Assistant at workshops",
+            "company": "AI and Advanced Programming Consortium",
+            "location": "Kanagawa, Japan",
+            "dates": "Apr. 2022 - Present"
+        },
+        {
+            "title": "Research Internship",
+            "company": "LINE Computer Vision Lab",
+            "location": "Tokyo, Japan",
+            "dates": "Aug. 2022 - Sep. 2022"
+        },
+        {
+            "title": "Research Fellow (JSPS DC1)",
+            "company": "Keio University",
+            "location": "Kanagawa, Japan",
+            "dates": "Apr. 2024 - Present"
+        }
+    ]
+}

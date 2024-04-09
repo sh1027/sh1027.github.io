@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "title": "B. Engineering",
+            "school": "Keio University",
+            "location": "Kanagawa, Japan",
+            "dates": "Apr. 2018 - Mar. 2022"
+        },
+        {
+            "title": "M.S. in Engineering",
+            "school": "Keio University",
+            "location": "Kanagawa, Japan",
+            "dates": "Apr. 2022 - Sep. 2023"
+        },
+        {
+            "title": "Ph.D in Engineering",
+            "school": "Keio University",
+            "location": "Kanagawa, Japan",
+            "dates": "Sep. 2023 - Present"
+        }
+    ]
+}
