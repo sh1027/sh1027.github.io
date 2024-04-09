@@ -10,7 +10,7 @@ const mainlogo = { name: "Shiori Ueda", href: "/" };
 const links = [
   {
     name: "CV",
-    href: "https://keio.box.com/s/pzur7yw2z0e3c05bthvav2dgfroytowv",
+    href: "/cv",
   },
   { name: "Photography (coming soon...)", href: "#" },
 ];
