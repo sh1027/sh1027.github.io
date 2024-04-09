@@ -126,7 +126,7 @@ function Links(links: any[]) {
             className="text-sm font-normal text-blue-600 dark:text-blue-500 underline hover:no-underline"
           >
             {" "}
-            <p>{link.title}</p>
+            {link.title}
           </Link>
         ))}
     </>
