@@ -1,48 +1,11 @@
-import { readJsonDataAsync } from "@/lib/read";
+import jsonData from "@/data/publications.json";
 import Link from "next/link";
-import path from "path";
 
 const me = ["Shiori Ueda", "上田栞"];
 
-interface LinkProps {
-  url: string;
-  title: string;
-}
+export default function PublicationList() {
+  const publications = jsonData.data;
 
-interface ArticleItemProps {
-  id: number;
-  category: string;
-  title: string;
-  authors: string[];
-  journal: string;
-  volume?: string;
-  number?: string;
-  pages?: string;
-  year?: string;
-  note?: string;
-  links?: LinkProps[];
-}
-
-interface ConferenceItemProps {
-  id: number;
-  category: string;
-  title: string;
-  authors: string[];
-  booktitle: string;
-  volume?: string;
-  number?: string;
-  pages?: string;
-  year?: string;
-  note?: string;
-  links?: LinkProps[];
-}
-
-export default async function PublicationList() {
-  const publications: (ArticleItemProps | ConferenceItemProps)[] =
-    await readJsonDataAsync(
-      path.join(process.cwd(), "src/data/publications.json")
-    );
-    
   return (
     <div className="flex flex-col items-start mx-10 space-y-2">
       <h1 id="publications" className="text-xl text-neutral-900">
@@ -65,9 +28,9 @@ function PubArticles(publications: any[]) {
       className="list-decimal text-sm text-neutral-800 font-light pl-8 space-y-3"
     >
       {publications
-        .filter((item: ArticleItemProps) => item.category === category)
+        .filter((item) => item.category === category)
         .reverse()
-        .map((item: any) => (
+        .map((item) => (
           <li key={item.id}>
             <div>
               <h3 className="font-semibold">{item.title}</h3>
@@ -105,9 +68,9 @@ function PubConferences(publications: any[]) {
       className="list-decimal text-sm text-neutral-800 font-light pl-8 space-y-3"
     >
       {publications
-        .filter((item: ConferenceItemProps) => item.category === category)
+        .filter((item: any) => item.category === category)
         .reverse()
-        .map((item: any) => (
+        .map((item) => (
           <li key={item.id}>
             <div>
               <h3 className="font-semibold">{item.title}</h3>
@@ -139,7 +102,7 @@ function PubConferences(publications: any[]) {
 function Authors(authors: string[]) {
   return (
     <>
-      {authors.map((author: string, index: number) => (
+      {authors.map((author, index) => (
         <span
           key={index}
           className={me.includes(author) ? "text-neutral-900 font-normal" : ""}
@@ -152,11 +115,11 @@ function Authors(authors: string[]) {
   );
 }
 
-function Links(links: LinkProps[]) {
+function Links(links: any[]) {
   return (
     <>
       {links.length > 0 &&
-        links.map((link: LinkProps) => (
+        links.map((link) => (
           <Link
             key={link.title}
             href={link.url}

@@ -7,7 +7,7 @@ import GrantList from "@/components/home/GrantList";
 import Profile from "@/components/home/Profile";
 import PublicationList from "@/components/home/PublicationList";
 
-export default async function Home() {
+export default function Home() {
   return (
     <main className="flex flex-col min-h-screen bg-neutral-100">
       <div className="sticky top-0 z-10">
@@ -16,17 +16,17 @@ export default async function Home() {
 
       <div className="max-w-screen-lg mx-auto flex flex-col py-10 space-y-8">
         {/* Profile */}
-        {await Profile()}
+        {Profile()}
         {/* Education */}
-        {await EducationeList()}
+        {EducationeList()}
         {/* Work Experiences */}
-        {await ExperienceList()}
+        {ExperienceList()}
         {/* Publications */}
-        {await PublicationList()}
+        {PublicationList()}
         {/* Grants */}
-        {await GrantList()}
+        {GrantList()}
         {/* Cooperative Research */}
-        {await CollaboratorList()}
+        {CollaboratorList()}
       </div>
     </main>
   );

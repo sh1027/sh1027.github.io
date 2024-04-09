@@ -1,7 +1,6 @@
-import { readJsonDataAsync } from "@/lib/read";
+import jsonData from "@/data/profile.json";
 import Image from "next/image";
 import Link from "next/link";
-import path from "path";
 import {
   SiGithub,
   SiGmail,
@@ -10,24 +9,8 @@ import {
   SiOrcid,
 } from "react-icons/si";
 
-interface SocialLinkProps {
-  url: string;
-  title: string;
-}
-
-interface ProfileProps {
-  name: string;
-  title: string;
-  subtitle: string;
-  imgPath: string;
-  description: string;
-  socials: SocialLinkProps[];
-}
-
-export default async function Profile() {
-  const profileData: ProfileProps = await readJsonDataAsync(
-    path.join(process.cwd(), "src/data/profile.json")
-  );
+export default function Profile() {
+  const profileData = jsonData.data;
 
   return (
     <div className="flex flex-col md:items-start mx-10 space-y-5">
@@ -61,7 +44,7 @@ export default async function Profile() {
   );
 }
 
-function SocialLinks(socials: SocialLinkProps[]) {
+function SocialLinks(socials: any[]) {
   const SocialIconDict: { [key: string]: JSX.Element } = {
     github: <SiGithub />,
     gmail: <SiGmail />,
@@ -73,7 +56,7 @@ function SocialLinks(socials: SocialLinkProps[]) {
   return (
     <>
       {socials.length > 0 &&
-        socials.map((link: SocialLinkProps) => (
+        socials.map((link) => (
           <Link key={link.title} href={link.url}>
             {SocialIconDict[link.title]}
           </Link>
