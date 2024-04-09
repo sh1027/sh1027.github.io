@@ -1,9 +1,9 @@
 import profileJson from "@/data/profile.json";
 import Link from "next/link";
 
-export default function Profile() {
-  const profileData = profileJson.data;
+const profileData = profileJson.data;
 
+export default function Profile() {
   return (
     <div className="flex flex-col items-start space-y-2 break-inside-avoid">
       <h1 className="text-2xl text-neutral-900 w-full border-neutral-900 border-b-2">

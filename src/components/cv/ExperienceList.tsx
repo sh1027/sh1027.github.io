@@ -1,9 +1,9 @@
 import experiencesJson from "@/data/experiences.json";
 import Link from "next/link";
 
-export default function ExperienceList() {
-  const experiences = experiencesJson.data;
+const experiences = experiencesJson.data.toReversed();
 
+export default function ExperienceList() {
   return (
     <div className="flex flex-col items-start space-y-2 break-inside-avoid">
       <h1 className="text-2xl text-neutral-900 w-full border-neutral-900 border-b-2">
@@ -11,7 +11,7 @@ export default function ExperienceList() {
       </h1>
       <div className="text-base text-neutral-800 w-full ml-5">
         <ul className="space-y-1">
-          {experiences.reverse().map((item, index) => (
+          {experiences.map((item, index) => (
             <li key={index}>
               <div className="flex flex-row">
                 <h3 className="font-semibold basis-3/4">{item.title}</h3>

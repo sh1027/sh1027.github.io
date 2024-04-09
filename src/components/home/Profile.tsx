@@ -9,9 +9,9 @@ import {
   SiOrcid,
 } from "react-icons/si";
 
-export default function Profile() {
-  const profileData = profileJson.data;
+const profileData = profileJson.data;
 
+export default function Profile() {
   return (
     <div className="flex flex-col md:items-start mx-10 space-y-5">
       <div className="flex flex-col md:flex-row items-center md:space-x-5">

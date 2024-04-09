@@ -1,8 +1,8 @@
 import skillsJson from "@/data/skills.json";
 
-export default function SkillList() {
-  const skills = skillsJson.data;
+const skills = skillsJson.data;
 
+export default function SkillList() {
   return (
     <div className="flex flex-col items-start space-y-2 break-inside-avoid">
       <h1 className="text-2xl text-neutral-900 w-full border-neutral-900 border-b-2">

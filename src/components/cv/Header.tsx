@@ -1,8 +1,9 @@
 import profileJson from "@/data/profile.json";
 import Link from "next/link";
 
+const profileData = profileJson.data;
+
 export default function Header() {
-  const profileData = profileJson.data;
   const email = profileData.socials.filter(
     (social) => social.title === "email"
   )[0].url;

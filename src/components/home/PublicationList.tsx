@@ -2,10 +2,9 @@ import publicationsJson from "@/data/publications.json";
 import Link from "next/link";
 
 const me = ["Shiori Ueda", "上田栞"];
+const publications = publicationsJson.data.toReversed();
 
 export default function PublicationList() {
-  const publications = publicationsJson.data;
-
   return (
     <div className="flex flex-col items-start mx-10 space-y-2">
       <h1 id="publications" className="text-xl text-neutral-900">
@@ -29,7 +28,6 @@ function PubArticles(publications: any[]) {
     >
       {publications
         .filter((item) => item.category === category)
-        .reverse()
         .map((item) => (
           <li key={item.id}>
             <div>
@@ -69,7 +67,6 @@ function PubConferences(publications: any[]) {
     >
       {publications
         .filter((item: any) => item.category === category)
-        .reverse()
         .map((item) => (
           <li key={item.id}>
             <div>
