@@ -12,7 +12,10 @@ export default function Nav() {
         © {ccYear} {profileData.name}
       </span>
       <span className="mx-auto text-sm text-center text-neutral-600">
-        Last updated: {today.toDateString()}
+        Last updated:{" "}
+        {today
+          .toLocaleDateString("en-us", { year: "numeric", month: "short" })
+          .replace(" ", ". ")}
       </span>
       <div className="page-break-before"></div>
     </footer>
