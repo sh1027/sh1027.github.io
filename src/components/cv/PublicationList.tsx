@@ -67,7 +67,7 @@ function PubConferences(publications: any[]) {
           .reverse()
           .map((item) => (
             <li key={item.id}>
-              <div>
+              <div className="size-5/6">
                 <h3 className="font-semibold">{item.title}</h3>
                 <p>{Authors(item.authors)}</p>
                 <p>
