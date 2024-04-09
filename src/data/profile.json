@@ -5,9 +5,10 @@
         "subtitle": "Keio University, Japan",
         "imgPath": "/profile.webp",
         "description": "I am a Ph.D. student advised by [Prof. Hideo Saito]('http://www.hvrl.ics.keio.ac.jp/') at Keio University, Japan. My research interests include computer vision and machine learning. Motivated by my background as a photographer, I am passionate about capturing reality beyond conventional optical capture.",
+        "homePage": "https://sh1027.github.io/",
         "socials": [
             {
-                "title": "gmail",
+                "title": "email",
                 "url": "mailto:shiori.ueda@keio.jp"
             },
             {

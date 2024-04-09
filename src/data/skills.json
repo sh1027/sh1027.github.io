@@ -1,0 +1,67 @@
+{
+    "data": [
+        {
+            "category": "Programming Languages",
+            "items":
+            [
+                {
+                    "name": "Python",
+                    "star": true
+                },
+                {
+                    "name": "C#",
+                    "star": false
+                },
+                {
+                    "name": "C",
+                    "star": false
+                },
+                {
+                    "name": "HTML/CSS",
+                    "star": false
+                },
+                {
+                    "name": "Java",
+                    "star": false
+                },
+                {
+                    "name": "JavaScript",
+                    "star": false
+                },
+                {
+                    "name": "SQL",
+                    "star": false
+                }
+            ]
+
+        },
+        {
+            "category": "Libraries",
+            "items":
+            [
+                {
+                    "name": "PyTorch",
+                    "star": true
+                },
+                {
+                    "name": "OpenCV",
+                    "star": true
+                }
+            ]
+        },
+        {
+            "category": "Tools",
+            "items":
+            [
+                {
+                    "name": "Blender",
+                    "star": true
+                },
+                {
+                    "name": "Unity",
+                    "star": false
+                }
+            ]
+        }
+    ]
+}
