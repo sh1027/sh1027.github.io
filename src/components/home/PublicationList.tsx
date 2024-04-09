@@ -1,10 +1,10 @@
-import jsonData from "@/data/publications.json";
+import publicationsJson from "@/data/publications.json";
 import Link from "next/link";
 
 const me = ["Shiori Ueda", "上田栞"];
 
 export default function PublicationList() {
-  const publications = jsonData.data;
+  const publications = publicationsJson.data;
 
   return (
     <div className="flex flex-col items-start mx-10 space-y-2">

@@ -1,7 +1,7 @@
-import jsonData from "@/data/grants.json";
+import grantsJson from "@/data/grants.json";
 
 export default function GrantList() {
-  const grants = jsonData.data;
+  const grants = grantsJson.data;
 
   return (
     <div className="flex flex-col items-start mx-10 space-y-2">

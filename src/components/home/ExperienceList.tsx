@@ -1,7 +1,7 @@
-import jsonData from "@/data/experiences.json";
+import experiencesJson from "@/data/experiences.json";
 
 export default function ExperienceList() {
-  const experiences = jsonData.data;
+  const experiences = experiencesJson.data;
 
   return (
     <div className="flex flex-col items-start mx-10 space-y-2">
@@ -13,7 +13,7 @@ export default function ExperienceList() {
               <h3 className="font-normal md:basis-3/4">
                 {item.title}, {item.company}
               </h3>
-              <p className="text-left">{item.dates}</p>
+              <p className="text-left ml-5 text-wrap">{item.dates}</p>
             </div>
           </li>
         ))}

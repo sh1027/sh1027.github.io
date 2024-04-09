@@ -1,4 +1,4 @@
-import jsonData from "@/data/profile.json";
+import profileJson from "@/data/profile.json";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -10,7 +10,7 @@ import {
 } from "react-icons/si";
 
 export default function Profile() {
-  const profileData = jsonData.data;
+  const profileData = profileJson.data;
 
   return (
     <div className="flex flex-col md:items-start mx-10 space-y-5">
@@ -46,8 +46,8 @@ export default function Profile() {
 
 function SocialLinks(socials: any[]) {
   const SocialIconDict: { [key: string]: JSX.Element } = {
+    email: <SiGmail />,
     github: <SiGithub />,
-    gmail: <SiGmail />,
     googlescholar: <SiGooglescholar />,
     linkedin: <SiLinkedin />,
     orcid: <SiOrcid />,

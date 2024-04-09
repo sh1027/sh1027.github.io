@@ -1,7 +1,7 @@
-import jsonData from "@/data/education.json";
+import educationJson from "@/data/education.json";
 
 export default function EducationeList() {
-  const education = jsonData.data;
+  const education = educationJson.data;
 
   return (
     <div className="flex flex-col items-start mx-10 space-y-2">

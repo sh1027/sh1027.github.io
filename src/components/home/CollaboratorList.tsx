@@ -1,7 +1,7 @@
-import jsonData from "@/data/cooperative_research.json";
+import collaboratorsJson from "@/data/cooperative_research.json";
 
 export default function CollaboratorList() {
-  const collaborators = jsonData.data;
+  const collaborators = collaboratorsJson.data;
 
   return (
     <div className="flex flex-col items-start mx-10 space-y-2">
