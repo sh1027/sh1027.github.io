@@ -4,10 +4,7 @@ import Link from "next/link";
 const profileData = profileJson.data;
 
 export default function Header() {
-  const email = profileData.socials.filter(
-    (social) => social.title === "email"
-  )[0].url;
-  const homepage = profileData.homePage;
+  const emailAddr = profileData.email.split("@");
 
   return (
     <div className="flex flex-col mx-auto space-y-5">
@@ -17,15 +14,17 @@ export default function Header() {
         </h1>
         <ul className="text-neutral-600 text-center">
           <li>
-            Email:{" "}
-            <Link href={email} className="hover:underline">
-              {email.replace("mailto:", "")}
-            </Link>
+            Email: {emailAddr[0]}
+            <span className="hidden">LaLaLa~</span>
+            <span className="print:hidden">{"[at]"}</span>
+            <span className="hidden print:inline">{"@"}</span>
+            <span className="hidden">HaHaHa~</span>
+            {emailAddr[1]}
           </li>
           <li>
             Homepage:{" "}
-            <Link href={homepage} className="hover:underline">
-              {homepage}
+            <Link href={profileData.homePage} className="hover:underline">
+              {profileData.homePage}
             </Link>
           </li>
         </ul>

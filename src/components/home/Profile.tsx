@@ -12,6 +12,8 @@ import {
 const profileData = profileJson.data;
 
 export default function Profile() {
+  const emailAddr = profileData.email.split("@");
+
   return (
     <div className="flex flex-col md:items-start mx-10 space-y-5">
       <div className="flex flex-col md:flex-row items-center md:space-x-5">
@@ -32,7 +34,14 @@ export default function Profile() {
           <h3 className="text-sm text-neutral-600 font-light">
             {profileData.subtitle}
           </h3>
-          <div className="flex justify-between gap-3 text-neutral-800 mt-3">
+          <p className="text-sm text-neutral-800 font-light mt-3">
+            Email: {emailAddr[0]}
+            <span className="hidden">LaLaLa~</span>
+            <span>{"[at]"}</span>
+            <span className="hidden">HaHaHa~</span>
+            {emailAddr[1]}
+          </p>
+          <div className="flex gap-3 justify-center md:justify-start text-neutral-800 mt-2">
             {SocialLinks(profileData.socials)}
           </div>
         </div>
@@ -46,7 +55,6 @@ export default function Profile() {
 
 function SocialLinks(socials: any[]) {
   const SocialIconDict: { [key: string]: JSX.Element } = {
-    email: <SiGmail />,
     github: <SiGithub />,
     googlescholar: <SiGooglescholar />,
     linkedin: <SiLinkedin />,
