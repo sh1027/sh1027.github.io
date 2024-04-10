@@ -21,7 +21,7 @@ export default function ExperienceList() {
                 <p className="font-normal">
                   {item.company}, {item.location}
                 </p>
-                <p className="size-3/4">
+                <p className="font-normal">
                   {item.descriptions.length > 0 && (
                     <ul className="list-disc ml-5">
                       {item.descriptions.map((description, index) => (
@@ -53,7 +53,10 @@ function parseMarkdownLinks(text: string) {
         const title = parts[index - 2]; // The title is two positions before the URL
         return (
           <Link key={index} href={url} className="hover:underline">
-            {title}
+            <span className="hidden md:inline print:inline">
+              {title}: {url}
+            </span>
+            <span className="inline md:hidden print:hidden">[{title}]</span>
           </Link>
         );
       }
