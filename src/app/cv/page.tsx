@@ -15,8 +15,9 @@ export default function Home() {
         <div className="max-w-screen-lg mx-auto flex items-center justify-between flex-wrap">
           <div className="mx-auto">
             <p className="text-base text-neutral-900 text-center">
-              This page is designed to be printed. Please use the print button
-              below to print the page.
+              This page is designed to be printed. Please use the
+              <span className="text-nowrap">🖨️Print</span> button to print the
+              page.
             </p>
           </div>
           <div className="flex flex-wrap justify-center py-2 space-x-3 mx-auto">
