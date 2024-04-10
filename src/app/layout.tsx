@@ -20,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="{inter.className} w-screen min-h-screen">
-        {children}
-      </body>
+      <body className="{inter.className} w-full min-h-screen">{children}</body>
       <Footer />
     </html>
   );
