@@ -8,9 +8,9 @@ export default function SkillList() {
       <h1 className="text-2xl text-neutral-900 w-full border-neutral-900 border-b-2">
         SKills
       </h1>
-      <div className="text-base text-neutral-800 w-full ml-5">
+      <div className="text-base text-neutral-800 w-full">
         {skills.map((categorySkills, index) => (
-          <div key={index}>
+          <div key={index} className="ml-5">
             <h2 className="text-xl text-neutral-900">
               {categorySkills.category}
             </h2>

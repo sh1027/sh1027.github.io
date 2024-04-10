@@ -1,4 +1,3 @@
-import Nav from "@/components/Nav";
 import CertificationList from "@/components/cv/CertificationList";
 import EducationeList from "@/components/cv/EducationList";
 import ExperienceList from "@/components/cv/ExperienceList";
@@ -11,14 +10,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen bg-neutral-100">
-      <div className="bg-neutral-200 print:hidden">
-        <div className="max-w-screen-lg mx-auto flex justify-between items-center">
-          <p className="text-base text-neutral-900">
-            This page is designed to be printed. Please use the print button
-            below to print the page.
-          </p>
-          <div className="flex justify-center py-5 space-x-3">
+    <main className="flex flex-col bg-neutral-100">
+      <div className="bg-neutral-200 print:hidden px-10 py-5">
+        <div className="max-w-screen-lg mx-auto flex items-center justify-between flex-wrap">
+          <div className="mx-auto">
+            <p className="text-base text-neutral-900 text-center">
+              This page is designed to be printed. Please use the print button
+              below to print the page.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center py-2 space-x-3 mx-auto">
             <Link
               className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold font-sans py-2 px-4 rounded"
               href="javascript:window.print()"

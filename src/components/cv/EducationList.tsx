@@ -8,15 +8,15 @@ export default function EducationeList() {
       <h1 className="text-2xl text-neutral-900 w-full border-neutral-900 border-b-2">
         Education
       </h1>
-      <div className="text-base text-neutral-800 w-full ml-5">
-        <ul className="space-y-1">
+      <div className="text-base text-neutral-800 w-full">
+        <ul className="space-y-1 ml-5">
           {education.map((item, index) => (
             <li key={index}>
-              <div className="flex flex-row">
-                <h3 className="font-semibold basis-3/4">{item.title}</h3>
-                <p className="text-left basis-1/4">{item.dates}</p>
+              <div className="flex flex-col justify-between md:flex-row print:flex-row">
+                <h3 className="font-semibold">{item.title}</h3>
+                <p className="text-left ml-5">{item.dates}</p>
               </div>
-              <div className="flex flex-col ml-5">
+              <div className="flex flex-col ml-5 shrink-0">
                 <p className="font-normal">
                   {item.school}, {item.location}
                 </p>

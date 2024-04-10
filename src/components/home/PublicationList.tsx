@@ -10,9 +10,7 @@ export default function PublicationList() {
       <h1 id="publications" className="text-xl text-neutral-900">
         Publications
       </h1>
-      <h2 className="text-base text-neutral-800">Journal Papers</h2>
       {PubArticles(publications)}
-      <h2 className="text-base text-neutral-800">Conferences</h2>
       {PubConferences(publications)}
     </div>
   );
@@ -22,38 +20,40 @@ function PubArticles(publications: any[]) {
   const category = "article";
 
   return (
-    <ol
-      reversed
-      className="list-decimal text-sm text-neutral-800 font-light pl-8 space-y-3"
-    >
-      {publications
-        .filter((item) => item.category === category)
-        .map((item) => (
-          <li key={item.id}>
-            <div>
-              <h3 className="font-semibold">{item.title}</h3>
-              <p>{Authors(item.authors)}</p>
-              <p>
-                <span className="italic">{item.journal}</span>
-                {item.volume && `, `}
-                <span>{item.volume && `vol. ${item.volume}`}</span>
-                {item.number && `, `}
-                <span>{item.number && `no. ${item.number}`}</span>
-                {item.pages && `, `}
-                <span>
-                  {item.pages &&
-                    `pp. ${item.pages.toString().replace("--", "-")}`}
-                </span>
-                {item.year && `, `}
-                <span>{item.year && `${item.year}`}</span>
-                {item.note && `, `}
-                <span>{item.note && `(${item.note})`}</span>
-              </p>
-              <p className="flex flex-row space-x-2">{Links(item.links)}</p>
-            </div>
-          </li>
-        ))}
-    </ol>
+    <div className="w-full ml-3">
+      <h2 className="text-lg text-neutral-800 mb-1">Journal Papers</h2>
+      <div className="text-sm text-neutral-800 font-light w-full">
+        <ol reversed className="list-decimal ml-5 space-y-3">
+          {publications
+            .filter((item) => item.category === category)
+            .map((item) => (
+              <li key={item.id}>
+                <div>
+                  <h3 className="font-semibold">{item.title}</h3>
+                  <p>{Authors(item.authors)}</p>
+                  <p>
+                    <span className="italic">{item.journal}</span>
+                    {item.volume && `, `}
+                    <span>{item.volume && `vol. ${item.volume}`}</span>
+                    {item.number && `, `}
+                    <span>{item.number && `no. ${item.number}`}</span>
+                    {item.pages && `, `}
+                    <span>
+                      {item.pages &&
+                        `pp. ${item.pages.toString().replace("--", "-")}`}
+                    </span>
+                    {item.year && `, `}
+                    <span>{item.year && `${item.year}`}</span>
+                    {item.note && `, `}
+                    <span>{item.note && `(${item.note})`}</span>
+                  </p>
+                  <p className="flex flex-row space-x-2">{Links(item.links)}</p>
+                </div>
+              </li>
+            ))}
+        </ol>
+      </div>
+    </div>
   );
 }
 
@@ -61,38 +61,40 @@ function PubConferences(publications: any[]) {
   const category = "proceedings";
 
   return (
-    <ol
-      reversed
-      className="list-decimal text-sm text-neutral-800 font-light pl-8 space-y-3"
-    >
-      {publications
-        .filter((item: any) => item.category === category)
-        .map((item) => (
-          <li key={item.id}>
-            <div>
-              <h3 className="font-semibold">{item.title}</h3>
-              <p>{Authors(item.authors)}</p>
-              <p>
-                <span className="italic">{item.booktitle}</span>
-                {item.volume && `, `}
-                <span>{item.volume && `vol. ${item.volume}`}</span>
-                {item.number && `, `}
-                <span>{item.number && `no. ${item.number}`}</span>
-                {item.pages && `, `}
-                <span>
-                  {item.pages &&
-                    `pp. ${item.pages.toString().replace("--", "-")}`}
-                </span>
-                {item.year && `, `}
-                <span>{item.year && `${item.year}`}</span>
-                {item.note && `, `}
-                <span>{item.note && `${item.note}`}</span>
-              </p>
-              <p className="flex flex-row space-x-2">{Links(item.links)}</p>
-            </div>
-          </li>
-        ))}
-    </ol>
+    <div className="w-full ml-3">
+      <h2 className="text-lg text-neutral-800 mb-1">Conferences</h2>
+      <div className="text-sm text-neutral-800 font-light w-full">
+        <ol reversed className="list-decimal ml-5 space-y-3">
+          {publications
+            .filter((item: any) => item.category === category)
+            .map((item) => (
+              <li key={item.id}>
+                <div>
+                  <h3 className="font-semibold">{item.title}</h3>
+                  <p>{Authors(item.authors)}</p>
+                  <p>
+                    <span className="italic">{item.booktitle}</span>
+                    {item.volume && `, `}
+                    <span>{item.volume && `vol. ${item.volume}`}</span>
+                    {item.number && `, `}
+                    <span>{item.number && `no. ${item.number}`}</span>
+                    {item.pages && `, `}
+                    <span>
+                      {item.pages &&
+                        `pp. ${item.pages.toString().replace("--", "-")}`}
+                    </span>
+                    {item.year && `, `}
+                    <span>{item.year && `${item.year}`}</span>
+                    {item.note && `, `}
+                    <span>{item.note && `${item.note}`}</span>
+                  </p>
+                  <p className="flex flex-row space-x-2">{Links(item.links)}</p>
+                </div>
+              </li>
+            ))}
+        </ol>
+      </div>
+    </div>
   );
 }
 

@@ -9,7 +9,7 @@ import PublicationList from "@/components/home/PublicationList";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen bg-neutral-100">
+    <main className="flex flex-col bg-neutral-100">
       <div className="sticky top-0 z-10">
         <Nav />
       </div>
