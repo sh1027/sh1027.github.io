@@ -1,11 +1,8 @@
 import Footer from "@/components/Footer";
 import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Favicon from "/public/favicon.ico";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Shiori Ueda",
@@ -24,7 +21,7 @@ export default function RootLayout({
       <GoogleTagManager gtmId="G-JH07603538" />
       <body className="{inter.className} w-full min-h-screen">
         {children}
-      <Footer />
+        <Footer />
       </body>
     </html>
   );
