@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -20,6 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="G-JH07603538" />
       <body className="{inter.className} w-full min-h-screen">
         {children}
       <Footer />
