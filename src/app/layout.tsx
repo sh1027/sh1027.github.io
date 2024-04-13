@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleTagManager gtmId="G-JH07603538" />
-      <body className="{inter.className} w-full min-h-screen">
+      <body>
         {children}
         <Footer />
       </body>
