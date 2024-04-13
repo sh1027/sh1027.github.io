@@ -1,14 +1,7 @@
 import profileJson from "@/data/profile.json";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  SiGithub,
-  SiGmail,
-  SiGooglescholar,
-  SiLinkedin,
-  SiOrcid,
-} from "react-icons/si";
-
+import { SiGithub, SiGooglescholar, SiLinkedin, SiOrcid } from "react-icons/si";
 const profileData = profileJson.data;
 
 export default function Profile() {
