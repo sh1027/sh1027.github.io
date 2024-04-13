@@ -8,11 +8,8 @@ import { useState } from "react";
 const mainlogo = { name: "Shiori Ueda", href: "/" };
 
 const links = [
-  {
-    name: "CV",
-    href: "/cv",
-  },
-  { name: "Photography (coming soon...)", href: "#" },
+  { name: "CV", href: "/cv" },
+  { name: "Photography", href: "https://sh1027.github.io/photoalbum/" },
 ];
 
 export default function Nav() {
@@ -79,9 +76,8 @@ export default function Nav() {
         </div>
         <div
           className={clsx({
-            "w-full block flex-grow md:flex md:items-center md:w-auto": isOpen,
-            "w-full hidden flex-grow md:flex md:items-center md:w-auto":
-              !isOpen,
+            "w-full block md:flex md:items-center md:w-auto": isOpen,
+            "w-full hidden md:flex md:items-center md:w-auto": !isOpen,
           })}
         >
           <div className="text-sm md:flex-grow">
