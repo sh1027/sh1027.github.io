@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { raleway } from "@/components/fonts";
 
-const mainlogo = { name: "Shiori Ueda", href: "/" };
+const mainlogo = { name: "Shiori UEDA", href: "/" };
 
 const links = [
   { name: "CV", href: "/cv" },
