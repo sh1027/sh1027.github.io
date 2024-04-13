@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <main className="flex flex-col bg-neutral-100 w-full min-h-screen">
       <NavCV />
-      <div className="max-w-screen-lg container mx-auto flex flex-col py-10 space-y-5 print:py-0">
-        <div className={`${noto_serif.className} ${noto_serif_jp.className}`}>
+      <div className={`${noto_serif.className} ${noto_serif_jp.className}`}>
+        <div className="max-w-screen-lg container mx-auto flex flex-col py-10 space-y-5 print:py-0">
           {Header()}
           {Profile()}
           {EducationeList()}
