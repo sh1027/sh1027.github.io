@@ -94,7 +94,7 @@
         {
             "id": 5,
             "category": "article",
-            "title": "3D shape estimation of wires from 3D X-ray CT images of electrical cables",
+            "title": "Three-dimensional shape estimation of wires from three-dimensional X-ray computed tomography images of electrical cables",
             "authors": [
                 "Shiori Ueda",
                 "Kanon Sato",
@@ -102,8 +102,17 @@
                 "Yutaka Hoshina"
             ],
             "journal": "Journal of Electronic Imaging",
-            "note": "accepted, Shiori Ueda and Kanon Sato contributed equally to this work",
-            "links": []
+            "volume": "33",
+            "number": "3",
+            "pages": "031209",
+            "year": 2024,
+            "note": "Shiori Ueda and Kanon Sato contributed equally to this work",
+            "links": [
+                {
+                    "title": "SPIE",
+                    "url": "https://doi.org/10.1117/1.JEI.33.3.031209"
+                }
+            ]
         }
     ]
 }
