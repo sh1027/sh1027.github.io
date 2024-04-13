@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
+import { noto_sans, noto_sans_jp } from "@/components/fonts";
 import "./globals.css";
 import Favicon from "/public/favicon.ico";
 
@@ -19,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleTagManager gtmId="G-JH07603538" />
-      <body>
+      <body className={`${noto_sans.className} ${noto_sans_jp.className}`}>
         {children}
         <Footer />
       </body>

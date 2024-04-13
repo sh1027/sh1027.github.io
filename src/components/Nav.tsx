@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { raleway } from "@/components/fonts";
 
 const mainlogo = { name: "Shiori Ueda", href: "/" };
 
@@ -31,7 +32,7 @@ export default function Nav() {
             href={mainlogo.href}
             className="h-8 w-auto"
           >
-            <span className="font-semibold text-xl tracking-tight">
+            <span className={`${raleway.className} text-2xl tracking-tight`}>
               {mainlogo.name}
             </span>
           </Link>

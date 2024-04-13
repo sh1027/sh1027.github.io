@@ -7,20 +7,23 @@ import NavCV from "@/components/cv/NavCV";
 import Profile from "@/components/cv/Profile";
 import PublicationList from "@/components/cv/PublicationList";
 import SkillList from "@/components/cv/SkillList";
+import { noto_serif, noto_serif_jp } from "@/components/fonts";
 
 export default function Home() {
   return (
-    <main className="flex flex-col bg-neutral-100">
+    <main className="flex flex-col bg-neutral-100 w-full min-h-screen">
       <NavCV />
-      <div className="max-w-screen-lg container mx-auto flex flex-col py-10 space-y-5 font-serif print:py-0">
-        {Header()}
-        {Profile()}
-        {EducationeList()}
-        {ExperienceList()}
-        {PublicationList()}
-        {GrantList()}
-        {CertificationList()}
-        {SkillList()}
+      <div className="max-w-screen-lg container mx-auto flex flex-col py-10 space-y-5 print:py-0">
+        <div className={`${noto_serif.className} ${noto_serif_jp.className}`}>
+          {Header()}
+          {Profile()}
+          {EducationeList()}
+          {ExperienceList()}
+          {PublicationList()}
+          {GrantList()}
+          {CertificationList()}
+          {SkillList()}
+        </div>
       </div>
     </main>
   );
