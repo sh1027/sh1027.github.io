@@ -21,7 +21,7 @@ export default function ExperienceList() {
                 <p className="font-normal">
                   {item.company}, {item.location}
                 </p>
-                <p className="font-normal">
+                <div className="font-normal">
                   {item.descriptions.length > 0 && (
                     <ul className="list-disc ml-5">
                       {item.descriptions.map((description, index) => (
@@ -31,7 +31,7 @@ export default function ExperienceList() {
                       ))}
                     </ul>
                   )}
-                </p>
+                </div>
               </div>
             </li>
           ))}
