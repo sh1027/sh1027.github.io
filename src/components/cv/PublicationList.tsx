@@ -22,7 +22,7 @@ function PubArticles(publications: any[]) {
     <div className="w-full ml-5">
       <h2 className="text-xl text-neutral-900">Journal Papers</h2>
       <div className="text-base text-neutral-800 w-full">
-        <ol reversed className="list-decimal space-y-1 ml-5">
+        <ol className="list-decimal space-y-1 ml-5">
           {publications
             .filter((item) => item.category === category)
             .map((item) => (
@@ -62,7 +62,7 @@ function PubConferences(publications: any[]) {
     <div className="w-full ml-5">
       <h2 className="text-xl text-neutral-900">Conferences</h2>
       <div className="text-base text-neutral-800 w-full">
-        <ol reversed className="list-decimal space-y-1 ml-5">
+        <ol className="list-decimal space-y-1 ml-5">
           {publications
             .filter((item: any) => item.category === category)
             .map((item) => (
