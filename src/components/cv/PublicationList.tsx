@@ -84,7 +84,7 @@ function PubConferences(publications: any[]) {
                     {item.year && `, `}
                     <span>{item.year && `${item.year}`}</span>
                     {item.note && `, `}
-                    <span>{item.note && `${item.note}`}</span>
+                    <span>{item.note && `(${item.note})`}</span>
                   </p>
                 </div>
               </li>
