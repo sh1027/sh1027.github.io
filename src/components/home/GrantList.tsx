@@ -5,7 +5,7 @@ const grants = grantsJson.data.toReversed();
 export default function GrantList() {
   return (
     <div className="flex flex-col items-start mx-10 space-y-2">
-      <h1 className="text-xl text-neutral-900">Grants</h1>
+      <h1 className="text-xl text-neutral-900">Grants and Fellowships</h1>
       <div className="text-sm text-neutral-800 font-light w-full max-w-screen-lg">
         <ul className="ml-3 space-y-1">
           {grants.map((item, index) => (
