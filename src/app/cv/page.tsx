@@ -19,8 +19,8 @@ export default function Home() {
           {Profile()}
           {EducationeList()}
           {ExperienceList()}
-          {PublicationList()}
           {GrantList()}
+          {PublicationList()}
           {CertificationList()}
           {SkillList()}
         </div>
