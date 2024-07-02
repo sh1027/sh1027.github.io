@@ -1,94 +1,129 @@
 {
-    "data": [
-        {
-            "id": 1,
-            "category": "article",
-            "title": "電線ケーブル3次元X線CT画像からの素線検出と追跡による3次元構造推定",
+  "data": [
+    {
+      "id": 1,
+      "category": "article",
+      "title": "電線ケーブル3次元X線CT画像からの素線検出と追跡による3次元構造推定",
       "authors": ["上田栞", "藤井亮", "斎藤英雄", "星名豊"],
-            "journal": "画像電子学会誌",
-            "volume": "52",
-            "number": "1",
-            "pages": "164--173",
-            "year": 2023,
-            "note": "in Japanese",
-            "links": [
-                {
-                    "title": "Paper",
-                    "url": "https://cir.nii.ac.jp/crid/1520859138425155712"
-                }
-            ]
-        },
+      "journal": "画像電子学会誌",
+      "volume": "52",
+      "number": "1",
+      "pages": "164--173",
+      "year": 2023,
+      "note": "in Japanese",
+      "links": [
         {
-            "id": 2,
-            "category": "article",
-            "title": "深層学習による顕微鏡focal stack画像からの全焦点画像の生成",
-      "authors": ["上田栞", "藤井亮", "斎藤英雄", "菅野純一", "足立秀之"],
-            "journal": "精密工学会誌",
-            "volume": "89",
-            "number": "3",
-            "pages": "265--274",
-            "year": 2023,
-            "note": "in Japanese",
-            "links": [
-                {
-                    "title": "J-STAGE",
-                    "url": "https://doi.org/10.2493/jjspe.89.265"
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "category": "proceedings",
-            "title": "3D shape estimation of wires from 3D x-ray CT images of electrical cables",
-      "authors": ["Shiori Ueda", "Kanon Sato", "Hideo Saito", "Yutaka Hoshina"],
-            "booktitle": "International Conference on Quality Control by Artificial Vision (QCAV)",
-            "volume": 12749,
-            "pages": 1274909,
-            "year": 2023,
-            "links": [
-                {
-                    "title": "Paper",
-                    "url": "https://doi.org/10.1117/12.2689548"
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "category": "proceedings",
-            "title": "Toward Multi-Plane Image Reconstruction from a Casually Captured Focal Stack",
-      "authors": ["Shiori Ueda", "Hideo Saito", "Shohei Mori"],
-            "booktitle": "International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications (VISAPP)",
-            "pages": "72--82",
-            "year": 2024,
-            "note": "Selected as full paper (top 24%)",
-            "links": [
-                {
-                    "title": "Project Page",
-                    "url": "https://mugichoko445.github.io/projects/ueda_visapp24/"
-                },
-                {
-                    "title": "SciTePress",
-                    "url": "https://doi.org/10.5220/0012438700003660"
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "category": "article",
-            "title": "Three-dimensional shape estimation of wires from three-dimensional X-ray computed tomography images of electrical cables",
-      "authors": ["Shiori Ueda", "Kanon Sato", "Hideo Saito", "Yutaka Hoshina"],
-            "journal": "Journal of Electronic Imaging",
-            "volume": "33",
-            "number": "3",
-            "pages": "031209",
-            "year": 2024,
-            "note": "Shiori Ueda and Kanon Sato contributed equally to this work",
-            "links": [
-                {
-                    "title": "SPIE",
-                    "url": "https://doi.org/10.1117/1.JEI.33.3.031209"
-                }
-            ]
+          "title": "Paper",
+          "url": "https://cir.nii.ac.jp/crid/1520859138425155712"
         }
-    ]
+      ]
+    },
+    {
+      "id": 2,
+      "category": "article",
+      "title": "深層学習による顕微鏡focal stack画像からの全焦点画像の生成",
+      "authors": ["上田栞", "藤井亮", "斎藤英雄", "菅野純一", "足立秀之"],
+      "journal": "精密工学会誌",
+      "volume": "89",
+      "number": "3",
+      "pages": "265--274",
+      "year": 2023,
+      "note": "in Japanese",
+      "links": [
+        {
+          "title": "J-STAGE",
+          "url": "https://doi.org/10.2493/jjspe.89.265"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "proceedings",
+      "title": "3D shape estimation of wires from 3D x-ray CT images of electrical cables",
+      "authors": ["Shiori Ueda", "Kanon Sato", "Hideo Saito", "Yutaka Hoshina"],
+      "booktitle": "International Conference on Quality Control by Artificial Vision (QCAV)",
+      "volume": 12749,
+      "pages": 1274909,
+      "year": 2023,
+      "links": [
+        {
+          "title": "Paper",
+          "url": "https://doi.org/10.1117/12.2689548"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "proceedings",
+      "title": "Toward Multi-Plane Image Reconstruction from a Casually Captured Focal Stack",
+      "authors": ["Shiori Ueda", "Hideo Saito", "Shohei Mori"],
+      "booktitle": "International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications (VISAPP)",
+      "pages": "72--82",
+      "year": 2024,
+      "note": "Selected as full paper (top 24%)",
+      "links": [
+        {
+          "title": "Project Page",
+          "url": "https://mugichoko445.github.io/projects/ueda_visapp24/"
+        },
+        {
+          "title": "SciTePress",
+          "url": "https://doi.org/10.5220/0012438700003660"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "category": "article",
+      "title": "Three-dimensional shape estimation of wires from three-dimensional X-ray computed tomography images of electrical cables",
+      "authors": ["Shiori Ueda", "Kanon Sato", "Hideo Saito", "Yutaka Hoshina"],
+      "journal": "Journal of Electronic Imaging",
+      "volume": "33",
+      "number": "3",
+      "pages": "031209",
+      "year": 2024,
+      "note": "Shiori Ueda and Kanon Sato contributed equally to this work",
+      "links": [
+        {
+          "title": "SPIE",
+          "url": "https://doi.org/10.1117/1.JEI.33.3.031209"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "category": "proceedings",
+      "title": "Free-Viewpoint Visual Inspection via 3D Gaussian Splatting for Direct Template Matching",
+      "authors": [
+        "Kenta Ito",
+        "Shiori Ueda",
+        "Shohei Mori",
+        "Junichi Sugano",
+        "Hideyuki Adachi",
+        "Hideo Saito"
+      ],
+      "booktitle": "Annual Conference of the IEEE Industrial Electronics Society (IECON)",
+      "pages": "",
+      "year": 2024,
+      "note": "Accepted",
+      "links": []
+    },
+    {
+      "id": 7,
+      "category": "proceedings",
+      "title": "Visuo-Tactile Zero-Shot Object Recognition with Vision-Language Model",
+      "authors": [
+        "Shiori Ueda",
+        "Atsushi Hashimoto",
+        "Masashi Hamaya",
+        "Kazutoshi Tanaka",
+        "Hideo Saito"
+      ],
+      "booktitle": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "pages": "",
+      "year": 2024,
+      "note": "Accepted",
+      "links": []
+    }
+  ]
 }
