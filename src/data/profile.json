@@ -1,29 +1,29 @@
 {
-    "data": {
-        "name": "Shiori Ueda",
-        "title": "Ph.D. student",
-        "subtitle": "Keio University, Japan",
-        "imgPath": "/profile.webp",
-        "description": "I am a Ph.D. student advised by [Prof. Hideo Saito]('http://www.hvrl.ics.keio.ac.jp/') at Keio University, Japan. My research interests include computer vision and machine learning. Motivated by my background as a photographer, I am passionate about capturing reality beyond conventional optical capture.",
-        "email": "shiori.ueda@keio.jp",
-        "homePage": "https://sh1027.github.io/",
-        "socials": [
-            {
-                "title": "github",
-                "url": "https://github.com/sh1027"
-            },
-            {
-                "title": "linkedin",
-                "url": "https://www.linkedin.com/in/shiori-ueda-7a17b3243"
-            },
-            {
-                "title": "googlescholar",
-                "url": "https://scholar.google.co.jp/citations?user=eTi6vz4AAAAJ"
-            },
-            {
-                "title": "orcid",
-                "url": "https://orcid.org/0009-0007-3820-6919"
-            }
-        ]
-    }
+  "data": {
+    "name": "Shiori Ueda",
+    "title": "Ph.D. student",
+    "subtitle": "Keio University, Japan",
+    "imgPath": "/profile.webp",
+    "description": "I am a Ph.D. student advised by [Prof. Hideo Saito]('http://www.hvrl.ics.keio.ac.jp/') at Keio University, Japan. My research interests include computer vision and machine learning. Motivated by my background as a photographer, I am passionate about capturing reality beyond conventional optical capture.",
+    "email": "shiori.ueda@keio.jp",
+    "homePage": "https://sh1027.github.io/",
+    "socials": [
+      {
+        "title": "github",
+        "url": "https://github.com/sh1027"
+      },
+      {
+        "title": "linkedin",
+        "url": "https://www.linkedin.com/in/shiori-ueda-7a17b3243"
+      },
+      {
+        "title": "googlescholar",
+        "url": "https://scholar.google.co.jp/citations?user=eTi6vz4AAAAJ"
+      },
+      {
+        "title": "orcid",
+        "url": "https://orcid.org/0009-0007-3820-6919"
+      }
+    ]
+  }
 }
