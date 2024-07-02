@@ -1,35 +1,38 @@
 {
-    "data": [
-        {
-            "title": "Team leader in object detection workshop",
-            "company": "AI and Advanced Programming Consortium",
-            "location": "Kanagawa, Japan",
-            "dates": "Apr. 2022 - Mar. 2024",
-            "descriptions": [
-                "Initiated and led an object detection workshop.",
-                "Implemented interactive coding exercises in PyTorch.",
-                "[Code]('https://github.com/sh1027/detectron2-tutorial')"
-            ]
-        },
-        {
-            "title": "Teaching assistant in women's AI study group",
-            "company": "AI and Advanced Programming Consortium",
-            "location": "Kanagawa, Japan",
-            "dates": "Oct. 2022 - Mar. 2024",
-            "descriptions": [
-                "Guided group discussions by providing real-world AI examples, enabling students to grasp practical AI applications and challenges.",
-                "[YouTube]('https://youtu.be/g50EFzorsrk?si=ZQvlttvflFX85Psa')"
-            ]
-        },
-        {
-            "title": "Research Internship",
-            "company": "LINE Computer Vision Lab",
-            "location": "Tokyo, Japan",
-            "dates": "Aug. 2022 - Sep. 2022",
-            "descriptions": [
-                "Researched about 3D face reconstruction",
-                "[Report]('https://engineering.linecorp.com/ja/blog/internship-cvl-ueda') (in Japanese)"
-            ]
-        }
-    ]
+  "data": [
+    {
+      "id": 1,
+      "title": "Team leader in object detection workshop",
+      "company": "AI and Advanced Programming Consortium",
+      "location": "Kanagawa, Japan",
+      "dates": "Apr. 2022 - Mar. 2024",
+      "descriptions": [
+        "Initiated and led an object detection workshop.",
+        "Implemented interactive coding exercises in PyTorch.",
+        "[Code]('https://github.com/sh1027/detectron2-tutorial')"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Research Internship",
+      "company": "LINE Computer Vision Lab",
+      "location": "Tokyo, Japan",
+      "dates": "Aug. 2022 - Sep. 2022",
+      "descriptions": [
+        "Researched about 3D face reconstruction",
+        "[Report]('https://engineering.linecorp.com/ja/blog/internship-cvl-ueda') (in Japanese)"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Teaching assistant in women's AI study group",
+      "company": "AI and Advanced Programming Consortium",
+      "location": "Kanagawa, Japan",
+      "dates": "Oct. 2022 - Mar. 2024",
+      "descriptions": [
+        "Guided group discussions by providing real-world AI examples, enabling students to grasp practical AI applications and challenges.",
+        "[YouTube]('https://youtu.be/g50EFzorsrk?si=ZQvlttvflFX85Psa')"
+      ]
+    }
+  ]
 }
